@@ -1,0 +1,15 @@
+footer.footer
+	.container
+		.footer_wrapper
+			.footer_logo
+				a(href='#')
+					img(src='/images/logo/logo-footer.svg')
+			ul.footer_nav-list
+				each item in ['О находке', 'Пройдите опрос', 'Проекты Находки', 'Обсуждения', 'Новости']
+					li.footer_nav-item
+						a(href='#').footer_nav-link=item
+			.footer_feedback
+				a(href="mailto:call@my-nakhodka.ru" target="_blank").footer_feedback-link
+					+sprite('letter', 24, 24)
+					span.footer_feedback-link-text call@my-nakhodka.ru
+				a(href="#" target="_blank").footer_feedback-personal Политика обработки персональных данных

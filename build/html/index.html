@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Находка 2030</title>
+    <link href="../css/main.css" type="text/css" rel="stylesheet">
+    <link href="../css/vendor.css" type="text/css" rel="stylesheet">
+  </head>
+  <body lang="ru-RU">
+    <div class="fix">
+      <div class="fix_content">
+        <header class="header">
+          <div class="container">
+            <div class="header_wrapper">
+              <div class="header_logo"><a href="#"><img src="/images/logo/logo-header.svg"></a></div>
+              <nav class="header_nav">
+                <ul class="header_nav-list">
+                  <li class="header_nav-item"><a class="header_nav-link" href="#">О находке</a></li>
+                  <li class="header_nav-item"><a class="header_nav-link" href="#">Пройдите опрос</a></li>
+                  <li class="header_nav-item"><a class="header_nav-link" href="#">Проекты Находки</a></li>
+                  <li class="header_nav-item"><a class="header_nav-link" href="#">Обсуждения</a></li>
+                  <li class="header_nav-item"><a class="header_nav-link" href="#">Новости</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </header>
+        <main>
+          <section class="idea">
+            <div class="container-content">
+              <div class="idea_nav-link"><a class="nav-link" href="#"><span class="nav-link_icon">
+                                    <svg width="8" height="24">
+                                      <use href="/images/svg/sprite.svg#arrow"></use>
+                                    </svg></span><span class="nav-link_text">Назад</span></a>
+              </div>
+              <div class="idea_title">
+                <h2>Поделитесь идеей</h2>
+              </div>
+              <form class="idea_form" action="#" method="post">
+                <fieldset class="idea_form-fieldset">
+                  <div class="idea_form-caption"><span class="idea_form-caption-num">1</span>
+                    <h6>Расскажите кем вы приходитесь городу</h6>
+                  </div>
+                  <div class="idea_form-inputs">
+                    <label class="idea_form-label">
+                      <input class="idea_form-radio" type="radio" name="who" value="local"><span class="idea_form-label-text">Местный житель</span>
+                    </label>
+                    <label class="idea_form-label">
+                      <input class="idea_form-radio" type="radio" name="who" value="city-guest"><span class="idea_form-label-text">Гость города</span>
+                    </label>
+                  </div>
+                </fieldset>
+                <fieldset class="idea_form-fieldset">
+                  <div class="idea_form-caption"><span class="idea_form-caption-num">2</span>
+                    <h6>Ваш возраст</h6>
+                  </div>
+                  <div class="idea_form-inputs">
+                    <label class="idea_form-label">
+                      <input class="idea_form-radio" type="radio" name="age" value="before-18"><span class="idea_form-label-text">до 18</span>
+                    </label>
+                    <label class="idea_form-label">
+                      <input class="idea_form-radio" type="radio" name="age" value="19-25"><span class="idea_form-label-text">19-25</span>
+                    </label>
+                    <label class="idea_form-label">
+                      <input class="idea_form-radio" type="radio" name="age" value="26-35"><span class="idea_form-label-text">26-35</span>
+                    </label>
+                    <label class="idea_form-label">
+                      <input class="idea_form-radio" type="radio" name="age" value="36-45"><span class="idea_form-label-text">36-45</span>
+                    </label>
+                    <label class="idea_form-label">
+                      <input class="idea_form-radio" type="radio" name="age" value="46-55"><span class="idea_form-label-text">46-55</span>
+                    </label>
+                    <label class="idea_form-label">
+                      <input class="idea_form-radio" type="radio" name="age" value="56-65"><span class="idea_form-label-text">56-65</span>
+                    </label>
+                    <label class="idea_form-label">
+                      <input class="idea_form-radio" type="radio" name="age" value="after-66"><span class="idea_form-label-text">Больше 66</span>
+                    </label>
+                  </div>
+                </fieldset>
+                <fieldset class="idea_form-fieldset">
+                  <div class="idea_form-caption"><span class="idea_form-caption-num">3</span>
+                    <h6>Вы хотите рассказать</h6>
+                  </div>
+                  <div class="idea_form-inputs">
+                    <label class="idea_form-label">
+                      <input class="idea_form-radio" type="radio" name="tell" value="problem"><span class="idea_form-label-text">О проблеме и ее решении</span>
+                    </label>
+                    <label class="idea_form-label">
+                      <input class="idea_form-radio" type="radio" name="tell" value="idea"><span class="idea_form-label-text">О идее города</span>
+                    </label>
+                    <label class="idea_form-label">
+                      <input class="idea_form-radio" type="radio" name="tell" value="unique"><span class="idea_form-label-text">Об уникальных интересных местах Находки</span>
+                    </label>
+                  </div>
+                </fieldset>
+                <fieldset class="idea_form-fieldset">
+                  <div class="idea_form-caption"><span class="idea_form-caption-num">4</span>
+                    <h6>Загрузите картинку и укажите место на карте</h6>
+                  </div>
+                  <div class="idea_form-inputs-upload">
+                    <div class="idea_form-location">
+                      <button class="idea_form-button js-open-map">
+                                        <svg width="24" height="24">
+                                          <use href="/images/svg/sprite.svg#pin"></use>
+                                        </svg><span class="idea_form-button-text">Указать геолокацию</span>
+                      </button>
+                      <input class="idea_form-location-input" type="text" value="" required>
+                    </div>
+                    <label class="idea_form-file">
+                                      <svg width="24" height="24">
+                                        <use href="/images/svg/sprite.svg#mount"></use>
+                                      </svg>
+                      <input class="idea_form-file-input" type="file" accept="image/jpeg, image/png" value="" required><span class="idea_form-file-text">Добавить изображение</span>
+                    </label>
+                  </div>
+                </fieldset>
+                <fieldset class="idea_form-fieldset">
+                  <div class="idea_form-caption"><span class="idea_form-caption-num">5</span>
+                    <h6>Укажите тему и расскажите идею</h6>
+                  </div>
+                  <div class="idea_form-inputs">
+                    <input class="idea_form-input-text" type="text" placeholder="Тема" value="" required>
+                    <textarea class="idea_form-textarea" placeholder="Идея" required></textarea>
+                  </div>
+                  <div class="idea_form-agreement">
+                    <label class="idea_form-agreement-label">
+                      <input class="idea_form-agreement-checkbox" type="checkbox" value="agreement" required><span class="idea_form-agreement-text">
+                        Я согласен с
+                        <a class="idea_form-agreement-link" href="#" target="_blank">политикой обработки персональных данных</a></span>
+                    </label>
+                  </div>
+                </fieldset>
+                <button class="idea_form-submit-button"><span>Отправить</span></button>
+              </form>
+            </div>
+          </section>
+        </main>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer_wrapper">
+            <div class="footer_logo"><a href="#"><img src="/images/logo/logo-footer.svg"></a></div>
+            <ul class="footer_nav-list">
+              <li class="footer_nav-item"><a class="footer_nav-link" href="#">О находке</a></li>
+              <li class="footer_nav-item"><a class="footer_nav-link" href="#">Пройдите опрос</a></li>
+              <li class="footer_nav-item"><a class="footer_nav-link" href="#">Проекты Находки</a></li>
+              <li class="footer_nav-item"><a class="footer_nav-link" href="#">Обсуждения</a></li>
+              <li class="footer_nav-item"><a class="footer_nav-link" href="#">Новости</a></li>
+            </ul>
+            <div class="footer_feedback"><a class="footer_feedback-link" href="mailto:call@my-nakhodka.ru" target="_blank">
+                                <svg width="24" height="24">
+                                  <use href="/images/svg/sprite.svg#letter"></use>
+                                </svg><span class="footer_feedback-link-text">call@my-nakhodka.ru</span></a><a class="footer_feedback-personal" href="#" target="_blank">Политика обработки персональных данных</a></div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="../scripts/vendor.js" type="text/javascript"></script>
+    <script src="../scripts/main.js" type="text/javascript"></script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+mixin sprite(id, width, height)
+	svg(width=`${width}` height=`${height}`)
+		use(href=`/images/svg/sprite.svg#${id}`)
+
+mixin picture(name, baseDir, altName)
+	picture
+		source(srcset=`/images/${baseDir}/${name}.webp` type="image/webp")
+		img(src=`/images/${baseDir}/${name}.png` alt=altName)
+
+mixin breadcrumbs(items, last)
+	.breadcrumbs
+		ul.breadcrumbs_list&attributes(attributes)
+			each item in items
+				li.breadcrumbs_item
+					a(href="#" title=item).breadcrumbs_link=item
+
+			if last
+				li.breadcrumbs_item
+					span.breadcrumbs_link-current=last

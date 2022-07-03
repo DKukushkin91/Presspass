@@ -1,0 +1,7 @@
+h2 {
+	@include font(40px, 48px, $dark, 700);
+}
+
+h6 {
+	@include font(18px, 24px, $dark, 600);
+}

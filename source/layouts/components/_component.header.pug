@@ -1,0 +1,13 @@
+header.header
+	.container
+		.header_wrapper
+			.header_logo
+				a(href='#')
+					img(src='/images/logo/logo-header.svg')
+			nav.header_nav
+				ul.header_nav-list
+
+					each item in ['О находке', 'Пройдите опрос', 'Проекты Находки', 'Обсуждения', 'Новости']
+						li.header_nav-item
+							a(href='#').header_nav-link=item
+

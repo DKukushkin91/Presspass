@@ -1,8 +1,8 @@
 import gulp from 'gulp';
 import imagemin from 'gulp-imagemin';
 import svgCss from 'gulp-svg-css-pseudo';
-import {DEVELOPMENT_ROUTE} from '../common/paths.js';
 import browserSync from 'browser-sync';
+import {DEVELOPMENT_ROUTE} from '../common/paths.js';
 
 export const taskSvgToCss = () => {
 	return gulp.src(DEVELOPMENT_ROUTE.SVG_IN_CSS_IMAGES)
@@ -11,7 +11,7 @@ export const taskSvgToCss = () => {
 					plugins: [
 						{removeViewBox: false},
 						{cleanupIDs: false},
-						{removeAttrs: {attrs: '*:(stroke|fill):((?!^none$).)*'}},
+						{removeAttrs: {attrs: '(stroke|fill)'}},
 					]
 				})
 			])

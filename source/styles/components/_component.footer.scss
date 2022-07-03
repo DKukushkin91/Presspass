@@ -1,0 +1,54 @@
+.footer {
+	background: $lightGrey;
+
+	&_wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		column-gap: 32px;
+		padding-top: 64px;
+		padding-bottom: 100px;
+		border-top: 1px solid $strokeDark;
+	}
+
+	&_logo {
+		width: 376px;
+	}
+
+	&_nav-list {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		row-gap: 32px;
+	}
+
+	&_nav-link {
+		@include font(20px, 24px, $darkMedium, 400);
+		text-decoration: none;
+	}
+
+	&_feedback {
+		display: flex;
+		flex-direction: column;
+		row-gap: 32px;
+
+		&-link {
+			@include font(16px, 24px, $accent, 400);
+			text-decoration: none;
+			display: inline-flex;
+			align-items: center;
+			column-gap: 12px;
+
+			svg {
+				fill: $accent;
+			}
+		}
+
+		&-personal {
+			@include font(14px, 20px, $darkLow, 400);
+			text-decoration: none;
+		}
+	}
+}

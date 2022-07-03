@@ -1,8 +1,7 @@
 {
 	"type": "module",
-	"name": "Template",
+	"name": "Presspass",
 	"version": "1.0.0",
-	"description": "Gulp",
 	"main": "index.js",
 	"scripts": {
 		"start": "gulp",
@@ -29,7 +28,7 @@
 		"gulp-sass-bulk-importer": "^3.0.2",
 		"gulp-sourcemaps": "^3.0.0",
 		"gulp-svg-css-pseudo": "^1.0.4",
-		"gulp-svg-sprite": "^1.5.0",
+		"gulp-svgstore": "^9.0.0",
 		"gulp-terser": "^2.1.0",
 		"gulp-ttf2woff": "^1.1.1",
 		"gulp-ttf2woff2": "^4.0.1",

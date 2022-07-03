@@ -4,7 +4,7 @@ export const DEVELOPMENT_ROUTE = {
 	SCRIPTS: 'source/scripts/app.js',
 	JQUERY: 'source/scripts/jquery/*.js',
 	VENDOR_SCRIPTS: 'source/scripts/vendor/*.js',
-	LAYOUTS: 'source/layouts/**/*.pug',
+	LAYOUTS: 'source/layouts/pages/*.pug',
 	IMAGES: 'source/images',
 	RASTR_IMAGES: 'source/images/**/*',
 	SVG: 'source/images/svg/**/*.svg',

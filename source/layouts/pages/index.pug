@@ -1,0 +1,91 @@
+extends ../_layout
+
+block page
+	section.idea
+		.container-content
+			.idea_nav-link
+				include ../components/_component.nav-link.pug
+			.idea_title
+				h2 Поделитесь идеей
+			form(action="#" method="post").idea_form
+				fieldset.idea_form-fieldset
+					.idea_form-caption
+						span.idea_form-caption-num 1
+						h6 Расскажите кем вы приходитесь городу
+					.idea_form-inputs
+						label.idea_form-label
+							input(type="radio" name="who" value="local").idea_form-radio
+							span.idea_form-label-text Местный житель
+						label.idea_form-label
+							input(type="radio" name="who" value="city-guest").idea_form-radio
+							span.idea_form-label-text Гость города
+				fieldset.idea_form-fieldset
+					.idea_form-caption
+						span.idea_form-caption-num 2
+						h6 Ваш возраст
+					.idea_form-inputs
+						label.idea_form-label
+							input(type="radio" name="age" value="before-18").idea_form-radio
+							span.idea_form-label-text до 18
+						label.idea_form-label
+							input(type="radio" name="age" value="19-25").idea_form-radio
+							span.idea_form-label-text 19-25
+						label.idea_form-label
+							input(type="radio" name="age" value="26-35").idea_form-radio
+							span.idea_form-label-text 26-35
+						label.idea_form-label
+							input(type="radio" name="age" value="36-45").idea_form-radio
+							span.idea_form-label-text 36-45
+						label.idea_form-label
+							input(type="radio" name="age" value="46-55").idea_form-radio
+							span.idea_form-label-text 46-55
+						label.idea_form-label
+							input(type="radio" name="age" value="56-65").idea_form-radio
+							span.idea_form-label-text 56-65
+						label.idea_form-label
+							input(type="radio" name="age" value="after-66").idea_form-radio
+							span.idea_form-label-text Больше 66
+				fieldset.idea_form-fieldset
+					.idea_form-caption
+						span.idea_form-caption-num 3
+						h6 Вы хотите рассказать
+					.idea_form-inputs
+						label.idea_form-label
+							input(type="radio" name="tell" value="problem").idea_form-radio
+							span.idea_form-label-text О проблеме и ее решении
+						label.idea_form-label
+							input(type="radio" name="tell" value="idea").idea_form-radio
+							span.idea_form-label-text О идее города
+						label.idea_form-label
+							input(type="radio" name="tell" value="unique").idea_form-radio
+							span.idea_form-label-text Об уникальных интересных местах Находки
+				fieldset.idea_form-fieldset
+					.idea_form-caption
+						span.idea_form-caption-num 4
+						h6 Загрузите картинку и укажите место на карте
+					.idea_form-inputs-upload
+						.idea_form-location
+							button.idea_form-button.js-open-map
+								+sprite('pin', 24, 24)
+								span.idea_form-button-text Указать геолокацию
+							input(type="text" value="" required).idea_form-location-input
+						label.idea_form-file
+							+sprite('mount', 24, 24)
+							input(type="file" accept="image/jpeg, image/png" value="" required).idea_form-file-input
+							span.idea_form-file-text Добавить изображение
+				fieldset.idea_form-fieldset
+					.idea_form-caption
+						span.idea_form-caption-num 5
+						h6 Укажите тему и расскажите идею
+					.idea_form-inputs
+						input(type="text" placeholder="Тема" value="" required).idea_form-input-text
+						textarea(placeholder="Идея" required).idea_form-textarea
+					.idea_form-agreement
+						label.idea_form-agreement-label
+							input(type="checkbox" value="agreement" required).idea_form-agreement-checkbox
+							span.idea_form-agreement-text Я согласен с
+								|
+								|
+								a(href="#" target="_blank").idea_form-agreement-link политикой обработки персональных данных
+				button.idea_form-submit-button
+					span Отправить

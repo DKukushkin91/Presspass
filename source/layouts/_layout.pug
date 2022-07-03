@@ -1,4 +1,4 @@
-include ./_mixins
+include tools/_mixins
 
 doctype html
 html(lang='ru')
@@ -13,11 +13,11 @@ html(lang='ru')
 	body(lang='ru-RU')
 		.fix
 			.fix_content
-				include ./_header
-				main.main
+				include components/_component.header.pug
+				main
 					block page
 
-			include ./_footer
+			include components/_component.footer.pug
 
-	script(src=`../scripts/vendor.js` type="text/javascript")
-	script(src=`../scripts/main.js` type="text/javascript")
+		script(src=`../scripts/vendor.js` type="text/javascript")
+		script(src=`../scripts/main.js` type="text/javascript")

@@ -1,0 +1,33 @@
+.header	{
+	background: $white;
+	padding: 10px 0;
+
+	&_wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+		column-gap: 10px;
+	}
+
+	&_logo {
+		width: 196px;
+		height: 52px;
+	}
+
+	&_nav {
+		&-list {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			display: flex;
+			align-items: center;
+			column-gap: 32px;
+		}
+
+		&-link {
+			@include font(16px, 24px, $dark, 500);
+			text-decoration: none;
+		}
+	}
+}
