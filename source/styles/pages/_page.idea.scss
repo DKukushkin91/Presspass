@@ -25,7 +25,7 @@
 
 		&-caption {
 			display: inline-flex;
-			align-items: center;
+			align-items: flex-start;
 			column-gap: 12px;
 			padding: 0;
 			margin: 0;
@@ -46,16 +46,21 @@
 				flex-wrap: wrap;
 				margin-top: 32px;
 				column-gap: 32px;
+				row-gap: 32px;
 			}
 		}
 
 		&-label {
 			@include font(16px, 24px, $darkMedium, 400);
 			display: inline-flex;
-			align-items: center;
+			align-items: flex-start;
 			width: fit-content;
 			cursor: pointer;
-			column-gap: 14px;
+			column-gap: 12px;
+
+			&-text {
+				flex: 1;
+			}
 		}
 
 		&-radio {
@@ -63,10 +68,12 @@
 			background: $white;
 			width: 20px;
 			height: 20px;
+			margin: 2px;
 			border: 1px solid $grey;
 			border-radius: 50%;
 			display: grid;
 			place-content: center;
+			cursor: pointer;
 
 			&::before {
 				content: "";
@@ -100,7 +107,7 @@
 
 		&-button {
 			display: inline-flex;
-			align-items: center;
+			align-items: flex-start;
 			column-gap: 12px;
 			background: 0;
 			border: 0;
@@ -111,12 +118,14 @@
 
 			&-text {
 				@include font(16px, 24px, $accent, 400);
+				flex: 1;
+				text-align: left;
 			}
 		}
 
 		&-file {
 			display: inline-flex;
-			align-items: center;
+			align-items: flex-start;
 			column-gap: 12px;
 			cursor: pointer;
 			width: 100%;
@@ -132,6 +141,7 @@
 
 			&-text {
 				@include font(16px, 24px, $accent, 400);
+				flex: 1;
 			}
 		}
 
@@ -156,6 +166,11 @@
 			background: $overlay;
 			width: 388px;
 			resize: none;
+
+			&::placeholder {
+				color: $darkLow;
+				opacity: 1;
+			}
 		}
 
 		&-agreement {
@@ -163,15 +178,15 @@
 
 			&-label {
 				display: inline-flex;
-				align-items: center;
-				column-gap: 14px;
+				align-items: flex-start;
+				column-gap: 12px;
 				cursor: pointer;
 			}
 
 			&-checkbox {
 				appearance: none;
 				background: $white;
-				margin: 0;
+				margin: 3px;
 				width: 18px;
 				height: 18px;
 				border: 1px solid $grey;
@@ -194,6 +209,7 @@
 
 			&-text {
 				@include font(16px, 24px, $darkMedium, 400);
+				flex: 1;
 			}
 
 			&-link {
@@ -225,6 +241,55 @@
 			&:disabled {
 				opacity: 0.4;
 				cursor: unset;
+			}
+		}
+	}
+}
+
+
+@media screen and (max-width: 768px) {
+	.idea {
+		&_nav-link {
+			margin-top: 24px;
+		}
+
+		&_title {
+			margin-top: 32px;
+		}
+
+		&_form {
+			margin-top: 32px;
+			padding-bottom: 64px;
+
+			&-fieldset {
+				margin-top: 20px;
+				padding: 24px 20px;
+			}
+
+			&-submit-button {
+				margin-top: 40px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 570px) {
+	.idea {
+		&_nav-link {
+			padding: 0 20px;
+		}
+
+		&_title {
+			padding: 0 20px;
+		}
+
+		&_form {
+			&-input-text {
+				width: 100%;
+			}
+
+			&-textarea {
+				width: 100%;
 			}
 		}
 	}

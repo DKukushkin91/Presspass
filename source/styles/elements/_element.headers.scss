@@ -2,6 +2,23 @@ h2 {
 	@include font(40px, 48px, $dark, 700);
 }
 
+h3 {
+	@include font(34px, 40px, $dark, 700);
+}
+
 h6 {
 	@include font(18px, 24px, $dark, 600);
+}
+
+
+@media screen and (max-width: 768px) {
+	h2 {
+		font-size: 32px;
+		line-height: 36px;
+	}
+
+	h3 {
+		font-size: 28px;
+		line-height: 33px;
+	}
 }

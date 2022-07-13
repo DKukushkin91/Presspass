@@ -52,3 +52,22 @@
 		}
 	}
 }
+
+@media screen and (max-width: 1000px) {
+	.footer {
+		&_wrapper {
+			flex-direction: column;
+			row-gap: 40px;
+			padding-top: 32px;
+			padding-bottom: 64px;
+		}
+	}
+}
+
+@media screen and (max-width: 420px) {
+	.footer {
+		&_logo {
+			width: 100%;
+		}
+	}
+}

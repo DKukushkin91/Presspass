@@ -1,3 +1,9 @@
+import {showMap} from './modules/showMap';
+import {addImage} from './modules/addImage';
+import {ValidationForm} from './modules/validationForm';
+
 document.addEventListener('DOMContentLoaded', () => {
-	console.log('js load')
+	new ValidationForm;
+	showMap();
+	addImage();
 });
